@@ -7,6 +7,6 @@ points = int(input("Enter points: "))
 coins = points / 1.125
 coins_ringgit = coins / 100
 
-print(f"your points is worth {coins_ringgit:.2f}")
+print(f"your points is worth RM{coins_ringgit:.2f}")
 
 
