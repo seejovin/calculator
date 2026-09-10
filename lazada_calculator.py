@@ -1,12 +1,17 @@
-# Points to Ringgit calculator
+import streamlit as st
 
-# Every 45 points = 40 coins
-# Every 100 coins = 1.00 ringgit
+st.title("Points to Ringgit Calculator")
 
-points = int(input("Enter points: "))
+st.write("45 points = 40 coins")
+st.write("100 coins = RM1.00")
+
+points = st.number_input(
+    "Enter points:",
+    min_value=0,
+    step=1
+)
+
 coins = points / 1.125
-coins_ringgit = coins / 100
+ringgit = coins / 100
 
-print(f"your points is worth RM{coins_ringgit:.2f}")
-
-
+st.success(f"RM{ringgit:.2f}")
