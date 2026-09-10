@@ -2,16 +2,11 @@ import streamlit as st
 
 st.title("Lazada Points to Ringgit")
 
-st.write("45 points = 40 coins")
-st.write("100 coins = RM1.00")
+import streamlit as st
 
-points = st.number_input(
-    "Enter points:",
-    min_value=0,
-    step=1
-)
+points = st.number_input("Enter points:")
 
 coins = points / 1.125
-ringgit = coins / 100
+coins_ringgit = coins / 100
 
-st.success(f"RM{ringgit:.2f}")
+st.write(f"Your points are worth RM{coins_ringgit:.2f}")
