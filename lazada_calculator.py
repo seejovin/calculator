@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Lazada Points to Ringgit Calculator")
+st.title("Lazada Points to Ringgit")
 
 st.write("45 points = 40 coins")
 st.write("100 coins = RM1.00")
